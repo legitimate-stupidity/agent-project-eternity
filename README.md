@@ -107,10 +107,10 @@ User Answer
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Prerequisites (still testing different models)
 
 - **Python 3.10+**
-- **Ollama** running locally (for LLM inference)
+- **Ollama**
 - **Ollama models:**
   - `llama3:8b` (generation/reasoning)
   - `mxbai-embed-large` (vector embeddings)
@@ -119,7 +119,7 @@ User Answer
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/legitimate-stupidity/agent-project-eternity.git
    cd agent-project-eternity
    ```
 
