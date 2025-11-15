@@ -1,0 +1,37 @@
+# Aethelred Foundry: System Configuration
+# This file manages API keys, model selection, and service parameters.
+
+ollama_config:
+  # The host for the local Ollama server
+  host: "http://localhost:11434"
+  
+  # The LLM to use for processing, summarizing, and answering queries
+  generation_model: "llama3:8b"
+  
+  # The model to use for creating vector embeddings
+  embedding_model: "mxbai-embed-large"
+
+database_config:
+  # The main SQLite DB for tasks and URLs
+  sqlite_db_path: "workspace/aethelred.db"
+  # The vector database for knowledge
+  lancedb_path: "workspace/aethelred.lancedb"
+
+services:
+  ingestor:
+    # How many seconds to wait between crawl cycles
+    poll_interval_seconds: 3600 # 1 hour
+    # Initial websites to crawl
+    crawl_targets:
+      - "https://www.digitalocean.com/community/tutorials"
+      - "https://www.rust-lang.org/learn"
+      
+  processor:
+    # How many seconds to wait between processing cycles
+    poll_interval_seconds: 600 # 10 minutes
+    # Cosine similarity threshold for detecting duplicate/contradictory info
+    annealing_threshold: 0.95
+  
+  api:
+    host: "0.0.0.0"
+    port: 8000

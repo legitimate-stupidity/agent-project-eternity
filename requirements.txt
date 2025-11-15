@@ -1,0 +1,9 @@
+typer[all]
+httpx
+lancedb
+sentence-transformers
+pyyaml
+fastapi
+uvicorn
+beautifulsoup4
+scikit-learn
