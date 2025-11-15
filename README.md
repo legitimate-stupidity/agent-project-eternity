@@ -1,7 +1,7 @@
-# Project Aethelred (v-Eternity)
+# (Project Eternity)
 ## A Self-Accreting Universal Knowledge Base
 
-Aethelred is an autonomous multi-agent system designed to build and serve an ever-evolving knowledge base. It ingests data from specified sources, processes it for contradictions and novelty, indexes it, and serves it via a public query API.
+Eternity is an autonomous multi-agent system designed to build and serve an ever-evolving knowledge base. It ingests data from specified sources, processes it for contradictions and novelty, indexes it, and serves it via a public query API.
 
 The system is the product of a 3-eon optimization process, evolving from a monolithic reactive LLM (T-0) to a proactive, self-healing multi-agent architecture (T-3eons). This is a fully autonomous knowledge foundry.
 
@@ -9,7 +9,7 @@ The system is the product of a 3-eon optimization process, evolving from a monol
 
 ## 🏗️ Architecture Overview
 
-Aethelred is a **distributed microservice system** with three autonomous agents orchestrated by a central launcher:
+Eternity is a **distributed microservice system** with three autonomous agents orchestrated by a central launcher:
 
 ```
 ┌─────────────────────────────────────────────────┐
